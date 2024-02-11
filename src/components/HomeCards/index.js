@@ -6,6 +6,7 @@ import React from 'react'
 import shelter from "../../assets/images/shelter.png.png" 
 import bot from "../../assets/images/bot.png" 
 import blog from "../../assets/images/blog.png" 
+import jobs from "../../assets/images/jobs.png" 
 import { AboutContainer, AboutWrapper,  AboutCard, AboutIcon, AboutH2, AboutP } from './InfoElements'
 
 export const About = () => {
@@ -34,7 +35,7 @@ export const About = () => {
           <AboutP>A safe place</AboutP>
           </AboutCard>
           <AboutCard>
-          <AboutIcon src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGUlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"></AboutIcon>
+          <AboutIcon src={jobs}></AboutIcon>
           <AboutH2>JOBS</AboutH2>
           <AboutP>Be self independent</AboutP>
           </AboutCard>

@@ -128,8 +128,8 @@ background:rgba(255,255,255,0.7);
 
 `
 export  const AboutIcon=styled.img`
-height:160px;
-width:170px;
+height:150px;
+width:180px;
 margin-bottom:0px;
 z-index: 3;
 // border:0.5px solid #FFC640;
