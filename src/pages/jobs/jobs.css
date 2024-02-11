@@ -5,26 +5,40 @@ single-blog {
     background-color: #fff;
 }
 
+.card-wrapper {
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust the alpha value to make the background more or less transparent */
+}
+
 .blog-meta {
     font-size: 14px;
     margin-bottom: 2px;
 }
 
 .single-blog span {
-    float: right;
     font-size: 12px;
-    color: cornflowerblue;
+    color: rgb(6, 35, 88);
+    display: flex;
+    float: right;
+    margin-top: 10px;
 }
 
 .blog-text {
     font-size: 14px;
     text-align: justify;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 
 .single-blog h2 {
-    margin-top: 10px;
     font-size: 16px;
-    color: #007bff;
+    color: #538ac5;
+    font-weight: normal;
 }
 .single-blog h2 a
 {

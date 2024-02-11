@@ -1,7 +1,7 @@
 import React from 'react';
 import "./shelter.css"
 
-export const shelter = () => {
+export const Shelter = () => {
   return (
     <table className="shelter-table">
       <thead>

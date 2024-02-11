@@ -3,14 +3,15 @@ import { Footer } from "./components/footer/Footer"
 import { Header } from "./components/header/Header"
 import { Home } from "./pages/home/Home"
 import { Login } from "./pages/login/Login"
-import { Regsiter } from "./pages/login/Regsiter.jsx"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { Regsiter } from "./pages/login/Regsiter"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { DetailsPages } from "./pages/details/DetailsPages"
 import { Account } from "./pages/account/Account"
 import { Create } from "./components/create/Create"
 import { Context } from "./context/Context"
-import { jobs } from "./pages/jobs/jobs.jsx"
-import { shelter } from "./pages/shelter/shelter.jsx"
+import { Jobs } from "./pages/jobs/jobs.jsx"
+import { Blogpage } from "./pages/blogpage/blogpage.jsx"
+import { Shelter } from "./pages/shelter/shelter.jsx"
 
 const App = () => {
   //after login
@@ -19,16 +20,17 @@ const App = () => {
     <>
       <Router>
         <Header />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/register' component={Regsiter} />
-          <Route exact path='/post/:id' component={DetailsPages} />
-          <Route exact path='/jobs' component={jobs} />
-          <Route exact path='/shelter' component={shelter} />
-          <Route exact path='/account' component={Account} />
-          <Route exact path='/create' component={Create} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Regsiter/>} />
+          <Route path="/post/:id" element={<DetailsPages/>} />
+          <Route path="/jobs" element={<Jobs/>} />
+          <Route path="/blogs" element={<Blogpage/>} />
+          <Route path="/shelter" element={<Shelter/>} />
+          <Route path="/account" element={<Account/>} />
+          <Route path="/create" element={<Create/>} />
+        </Routes>
         <Footer />
       </Router>
     </>
