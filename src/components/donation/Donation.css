@@ -72,12 +72,14 @@
   /* Style the back side */
   .flip-card-back {
     background-color: #FF597A;
-    color: #FFE856;
+    color: #ffffff;
+    padding-top: 100px;
   transform: rotateY(180deg); 
   /*   border: 40px solid #fff; */
       box-sizing: border-box;
-    box-shadow: inset 0px 0px 0px 40px #fff;
+    box-shadow: inset 0px 0px 0px 4px #fff;
   }
+
   .donation-text{
     color: #ffffff;
     width:fit-content;
