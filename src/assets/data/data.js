@@ -7,7 +7,7 @@ export const nav = [
     {
       id: 2,
       text: "taarabot",
-      url:"https://mediafiles.botpress.cloud/5778def2-9ee0-4b3f-990f-97f5df404e60/webchat/bot.html",
+      url:"https://console.dialogflow.com/api-client/demo/embedded/9ceb4ad7-b3a7-49eb-b8e1-9b72a12e79cb",
     },
     {
       id: 3,

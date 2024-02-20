@@ -38,7 +38,7 @@ export const Create = () => {
     }
     try {
       const res = await axios.post("http://localhost:5000/posts", newPost)
-      window.location.replace("http://localhost:3000")
+      window.location.replace("http://localhost:3000/blogs")
     } catch (error) {}
   }
 
