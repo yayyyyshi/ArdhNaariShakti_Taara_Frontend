@@ -41,7 +41,8 @@ export const DetailsPages = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/posts/${post._id}`, { data: { username: user.username } })
+      console.log(post._id)
+      await axios.delete(`http://localhost:5000/posts/${post._id}`, { username: user.username })
       window.location.replace("/")
     } catch (error) {}
   }
