@@ -91,7 +91,7 @@ export const AboutWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    margin-top:300px;
   }
 `;
 
@@ -123,13 +123,15 @@ background:rgba(255,255,255,0.7);
 
 @media screen and (max-width:480px){
     height:300px;
+    
 }
+
 
 
 `
 export  const AboutIcon=styled.img`
 height:150px;
-width:180px;
+width:170px;
 margin-bottom:0px;
 z-index: 3;
 // border:0.5px solid #FFC640;
@@ -171,7 +173,7 @@ color:purple;
 `
 export const AboutP=styled.p`
 font-family:'Poppins', sans-serif;
-font-weight: 400;
+font-weight: bolder;
 font-size: 16px;
 line-height: 20px;
 z-index: 3;

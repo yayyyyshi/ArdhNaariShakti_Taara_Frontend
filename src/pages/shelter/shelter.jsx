@@ -3,6 +3,7 @@ import "./shelter.css"
 
 export const Shelter = () => {
   return (
+    <div className='table-container'>
     <table className="shelter-table">
       <thead>
         <tr>
@@ -180,6 +181,7 @@ export const Shelter = () => {
         </tr>
       </tbody>
     </table>
+    </div>
     
 
     
