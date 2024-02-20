@@ -54,11 +54,11 @@ export const Category = () => {
   const { search } = useLocation()
 
   useEffect(() => {
-    const getCat = async () => {
-      const res = await axios.get("http//localhost:5000/category" + search)
-      setCat(res.data)
-    }
-    getCat()
+    // const getCat = async () => {
+    //   const res = await axios.get("http//localhost:5000/category" + search)
+    //   setCat(res.data)
+    // }
+    // getCat()
   }, [search])
   return (
     <>

@@ -12,7 +12,7 @@ export const nav = [
     {
       id: 3,
       text: "blog",
-      url: "/pages",
+      url: "/blogs",
     },
     {
       id: 4,
