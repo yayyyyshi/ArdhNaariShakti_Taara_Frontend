@@ -14,7 +14,7 @@ export const Blogpage = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const res = await axios.get("http://localhost:5000/posts" + search)
+      const res = await axios.get("https://taara-backend.onrender.com/posts" + search)
       setPosts(res.data)
     }
     fetchPost()

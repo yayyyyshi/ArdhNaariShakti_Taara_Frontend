@@ -31,13 +31,13 @@ export const Create = () => {
       newPost.photo = filename
 
       try {
-        await axios.post("http://localhost:5000/upload", data)
+        await axios.post("https://taara-backend.onrender.com/upload", data)
       } catch (error) {
         console.log(error)
       }
     }
     try {
-      const res = await axios.post("http://localhost:5000/posts", newPost)
+      const res = await axios.post("https://taara-backend.onrender.com/posts", newPost)
       window.location.replace("http://localhost:3000/blogs")
     } catch (error) {}
   }

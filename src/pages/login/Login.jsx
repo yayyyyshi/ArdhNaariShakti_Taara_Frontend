@@ -14,7 +14,7 @@ export const Login = () => {
     e.preventDefault()
     dispatch({ type: "LOGINSTART" })
     try {
-      const res = await axios.post("http://localhost:5000/auth/login", {
+      const res = await axios.post("https://taara-backend.onrender.com/auth/login", {
         username: userRef.current.value,
         password: passRef.current.value,
       })

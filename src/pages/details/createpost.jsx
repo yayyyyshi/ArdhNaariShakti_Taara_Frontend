@@ -18,7 +18,7 @@ export const DetailsPages = () => {
   const [post, setPost] = useState({})
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("localhost:5000/posts/" + path)
+      const res = await axios.get("https://taara-backend.onrender.com/posts/" + path)
       console.log(res)
       //setp 2
       setPost(res.data)
@@ -28,12 +28,12 @@ export const DetailsPages = () => {
 
   // step 3
   // file create garne time add garne
-  const PublicFlo = "http://localhost:5000/images/"
+  const PublicFlo = "https://taara-backend.onrender.com/images/"
   const { user } = useContext(Context)
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/posts/${post._id}`, { data: { username: user.username } })
+      await axios.delete(`https://taara-backend.onrender.com/posts/${post._id}`, { data: { username: user.username } })
       window.location.replace("/")
     } catch (error) {}
   }

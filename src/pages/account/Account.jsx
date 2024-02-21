@@ -13,7 +13,7 @@ export const Account = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [succ, setSucc] = useState(false)
-  const PublicFlo = "http://localhost:5000/images/"
+  const PublicFlo = "https://taara-backend.onrender.com/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -33,13 +33,13 @@ export const Account = () => {
       updateUser.profilePic = filename
 
       try {
-        await axios.post("localhost:5000/upload", data)
+        await axios.post("https://taara-backend.onrender.com/upload", data)
       } catch (error) {
         console.log(error)
       }
     }
     try {
-      const res = await axios.put("http://localhost:5000/users/" + user._id, updateUser)
+      const res = await axios.put("https://taara-backend.onrender.com/users/" + user._id, updateUser)
       setSucc(true)
       dispatch({ type: "UPDATE_SUCC", payload: res.data })
       window.location.reload()
