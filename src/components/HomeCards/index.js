@@ -17,7 +17,7 @@ export const About = () => {
       <AboutContainer>
         {/* <AboutH1>What We Do</AboutH1> */}
         <AboutWrapper>
-        <Link to="https://mediafiles.botpress.cloud/5778def2-9ee0-4b3f-990f-97f5df404e60/webchat/bot.html">
+        <Link to="https://console.dialogflow.com/api-client/demo/embedded/9ceb4ad7-b3a7-49eb-b8e1-9b72a12e79cb">
           <AboutCard >
           <AboutIcon src={bot}></AboutIcon>
           <AboutH2>Taara Bot</AboutH2>
