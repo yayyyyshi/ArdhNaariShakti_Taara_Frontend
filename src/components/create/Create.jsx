@@ -38,7 +38,7 @@ export const Create = () => {
     }
     try {
       const res = await axios.post("https://taara-backend.onrender.com/posts", newPost)
-      window.location.replace("http://localhost:3000/blogs")
+      window.location.replace("/")
     } catch (error) {}
   }
 
