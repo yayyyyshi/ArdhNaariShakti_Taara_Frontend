@@ -51,7 +51,7 @@ export const DetailsPages = () => {
   const handleUpdate = async () => {
     try {
       await axios.put(`https://taara-backend.onrender.com/posts/${post._id}`, { username: user.username, title, desc })
-      window.location.reload()
+      window.location.replace("/")
     } catch (error) {}
   }
 
