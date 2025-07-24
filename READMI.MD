@@ -7,13 +7,13 @@ Ardhnaari Shakti Taara is a spiritually inspired web platform that represents th
 It includes various sections like blogs, a symbolic shelter space, an interactive bot concept, a job listing board, and more — all designed to offer a peaceful digital experience rooted in spiritual and emotional meaning
 
 Technologies Used:
-HTML5
-CSS3
-JavaScript (ES6)
-React.js 
-Node.js
-Netlify for deployment
-Git and GitHub for version control
+1 HTML5
+2 CSS3
+3 JavaScript (ES6)
+4 React.js 
+5 Node.js
+6 Netlify for deployment
+7 Git and GitHub for version control
 
 Purpose of the Project:
 This project was created to:
@@ -42,9 +42,8 @@ The website is fully responsive and works smoothly on all screen sizes — from 
 Installation & Running the Project Locally:
 
 Clone the repository:
-git clone 
+git clone https://github.com/Agarwalvidu/ArdhNaariShakti_Taara_Frontend.git
 cd repo-name
-
 Install dependencies:
 npm install
 
@@ -64,11 +63,11 @@ Deploy!
 Live Site: https://ardhnaarishaktitaara.netlify.app
 
 Future Ideas:
-Make the Taarabot section interactive using an actual chatbot
-Add guided meditations or soundscapes
-Enable blog post submissions from visitors
-Expand job section into a searchable directory
-Create a personal dashboard for frequent user
+1 Make the Taarabot section interactive using an actual chatbot
+2 Add guided meditations or soundscapes
+3 Enable blog post submissions from visitors
+4 Expand job section into a searchable directory
+5 Create a personal dashboard for frequent user
 
 Contributing:
 Contributions are welcome. To suggest changes:
