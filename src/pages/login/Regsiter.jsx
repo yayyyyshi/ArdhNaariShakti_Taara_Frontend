@@ -1,54 +1,100 @@
-import React, { useState } from "react"
-import "./login.css"
-import back from "../../assets/images/my-account.jpg"
-import axios from "axios"
+import React, { useState } from "react";
+import "./login.css";
+import back from "../../assets/images/my-account.jpg";
+import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Regsiter = () => {
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
-  const [email, setEmail] = useState("")
-  const [error, setError] = useState(false)
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(null);
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setError(false)
+    e.preventDefault();
+    setError(null);
     try {
-      const res = await axios.post("https://taara-backend.onrender.com/auth/register", {
-        username,
-        email,
-        password,
-      })
-      res.data && window.location.replace("/")
-    } catch (error) {
-      setError(true)
+      const res = await axios.post(
+        "https://taara-backend.onrender.com/auth/register",
+        {
+          username,
+          email,
+          password,
+        }
+      );
+      res.data && navigate("/login");
+    } catch (err) {
+      setError("Registration failed. Username or email may already be taken.");
     }
-  }
+  };
   return (
     <>
-      <section className='login'>
-        <div className='container'>
-          <div className='backImg'>
-            <img src={back} alt='' />
-            <div className='text'>
-              <h3>Register</h3>
-              <h1>My account</h1>
+      <section className="login-container">
+        <div className="login-image-container">
+          <img src={back} alt="Decorative background" />
+        </div>
+
+        <div className="login-form-container">
+          <form className="login-form" onSubmit={handleSubmit}>
+            <h2>Create an Account</h2>
+
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input
+                id="username"
+                type="text"
+                required
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="Choose a username"
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                required
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+              />
+            </div>
+
+           <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <div className="password-wrapper">
+              <input
+                id="password"
+                required
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter your password"
+              />
+              <button
+                type="button"
+                className="toggle-password"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? "Hide" : "Show"}
+              </button>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit}>
-            <span>Username *</span>
-            <input type='text' required onChange={(e) => setUsername(e.target.value)} />
-            <span>Email address *</span>
-            <input type='email' required onChange={(e) => setEmail(e.target.value)} />
-            <span>Password *</span>
-            <input type='password' required onChange={(e) => setPassword(e.target.value)} />
-            <button type='submit' className='button'>
+            {error && <p className="error-message">{error}</p>}
+
+            <button type="submit" className="button">
               Register
             </button>
+
+            <p className="register-link">
+              Already have an account? <Link to="/login">Login</Link>
+            </p>
           </form>
-          {error && <span>Someting went wrong</span>}
         </div>
       </section>
     </>
-  )
-}
+  );
+};
