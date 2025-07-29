@@ -7,7 +7,7 @@ export const FlipCard = () => {
       <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src="https://tse2.mm.bing.net/th/id/OIG3.wghULNG3NVvZH5BbKI8S?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="Avatar" />
+          <img src="/images/category/card_image.jpg" alt="Avatar" />
         </div>
         <div className="flip-card-back">
           <h2>Please fill the feedback form.</h2>
