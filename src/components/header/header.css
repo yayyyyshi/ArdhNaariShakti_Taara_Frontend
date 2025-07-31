@@ -1,41 +1,58 @@
 header {
-  background: #ffa9cb ;
+  background: #ffa9cb;
   padding: 20px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
   position: relative;
   z-index: 44;
+  transition: all 0.3s ease;
 }
-/* nav */
-
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
+  z-index: 9999;
+  background: #ffa9cb;
+}
 nav ul {
   display: flex;
+  align-items: center;
 }
 nav a {
   text-transform: capitalize;
   margin-right: 30px;
   color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-/* User */
+nav a:hover {
+  color: #333;
+}
 .profile {
   margin-left: 30px;
   cursor: pointer;
 }
 .profile .image {
   display: flex;
+  align-items: center;
   padding-bottom: 20px;
 }
-.profile .image img {
-  margin-right: 20px;
-}
-.profile button {
-  font-size: 17px;
-  font-weight: 500;
-}
+.profile .image img,
 .profile img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  margin-right: 20px;
+}
+.profile button {
+  font-size: 17px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .openProfile {
   color: #000;
@@ -45,6 +62,9 @@ nav a {
   right: 10px;
   width: 250px;
   background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10000;
 }
 .openProfile .box {
   display: flex;
@@ -52,7 +72,11 @@ nav a {
   width: 100%;
   margin-top: 10px;
   padding: 5px;
-  transition: 0.5s;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+.openProfile .box:hover {
+  background: rgba(147, 75, 255, 0.075);
 }
 .openProfile .icon {
   font-size: 20px;
@@ -61,23 +85,13 @@ nav a {
 .openProfile h4 {
   font-size: 15px;
   font-weight: 500;
-}
-.openProfile button:hover {
-  background: rgba(147, 75, 255, 0.075);
-}
-header.active {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
-  z-index: 9999;
-  background: #fff;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   header .search {
     display: none;
   }
+
   nav {
     display: none;
   }
