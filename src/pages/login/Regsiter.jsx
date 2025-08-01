@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; 
 import "./login.css";
 import back from "../../assets/images/my-account.jpg";
 import axios from "axios";
@@ -103,11 +104,12 @@ export const Regsiter = () => {
             <button type="submit" className="button">
               Register
             </button>
-
             <p className="register-link">
-              Already have an account? <Link to="/login">Login</Link>
+              Already have an account? <Link to="/login">Back to Login</Link>
             </p>
           </form>
+
+          {error && <span style={{ color: "red" }}>Something went wrong</span>}
         </div>
         <ToastContainer />
       </section>

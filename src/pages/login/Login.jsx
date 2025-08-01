@@ -97,10 +97,10 @@ export const Login = () => {
             <button className="button" type="submit" disabled={FetchData}>
               {FetchData ? "Logging in..." : "Log In"}
             </button>
-
             <p className="register-link">
-              Don’t have an account? <Link to="/register">Register</Link>
+              Don’t have an account?{" "} <Link to="/register">Create Account</Link>
             </p>
+
           </form>
         </div>
         <ToastContainer />
