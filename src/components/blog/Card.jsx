@@ -25,7 +25,7 @@ export const Card = ({ posts }) => {
                 <Link to={`/post/${item._id}`}>
                   <h3>{item.title}</h3>
                 </Link>
-                <p>{item.desc.slice(0, 180)}...</p>
+               <p>{item.desc ? item.desc.slice(0, 180) : 'No description available'}...</p>
                 <div className='date'>
                   <AiOutlineClockCircle className='icon' /> <label htmlFor=''>{new Date(item.createdAt).toDateString()}</label>
                   <AiOutlineComment className='icon' /> <label htmlFor=''>27</label>
