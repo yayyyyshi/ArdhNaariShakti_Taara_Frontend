@@ -1,4 +1,6 @@
 import React, { useContext } from "react"
+
+import { Legal } from "./pages/legal/legal.jsx"
 import { Footer } from "./components/footer/Footer"
 import { GoogleTagManager } from "./components/tagmanager/tagmanager"
 import { Header } from "./components/header/Header"
@@ -13,6 +15,7 @@ import { Context } from "./context/Context"
 import { Jobs } from "./pages/jobs/jobs.jsx"
 import { Blogpage } from "./pages/blogpage/blogpage.jsx"
 import { Shelter } from "./pages/shelter/shelter.jsx"
+
 
 const App = () => {
   //after login
@@ -32,6 +35,8 @@ const App = () => {
           <Route path="/shelter" element={<Shelter/>} />
           <Route path="/account" element={<Account/>} />
           <Route path="/create" element={<Create/>} />
+           <Route path="/legal" element={<Legal/>} />
+          
         </Routes>
         <Footer />
       </Router>

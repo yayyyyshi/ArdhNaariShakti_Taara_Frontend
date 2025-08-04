@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 import shelter from "../../assets/images/shelter.png.png" 
 import bot from "../../assets/images/bot.png" 
 import blog from "../../assets/images/blog.png" 
-import jobs from "../../assets/images/jobs.png" 
+import jobs from "../../assets/images/jobs.png"
+import law from  "../../assets/images/law.png"
 import { AboutContainer, AboutWrapper,  AboutCard, AboutIcon, AboutH2, AboutP } from './InfoElements'
 
 export const About = () => {
@@ -45,6 +46,14 @@ export const About = () => {
           <AboutP>Be self independent</AboutP>
           </AboutCard>
           </Link>
+
+          <Link to='/legal'>
+          <AboutCard>
+            <AboutIcon src={law}></AboutIcon>
+            <AboutH2>Legal Rights</AboutH2>
+            <AboutP>Know your legal rights and protections</AboutP>
+            </AboutCard>
+            </Link>
         </AboutWrapper>
 
       </AboutContainer>
