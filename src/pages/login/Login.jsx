@@ -33,11 +33,10 @@ export const Login = () => {
       toast.success("Login successful!", {
         position: "top-center",
         autoClose: 2000,
+        onClose: () => {
+          navigate("/");
+        },
       });
-
-      setTimeout(() => {
-        navigate("/");
-      }, 2000);
     } catch (err) {
       dispatch({ type: "LOGINFAILED" });
       setError("Login failed. Please check your username and password.");
@@ -97,13 +96,13 @@ export const Login = () => {
             <button className="button" type="submit" disabled={FetchData}>
               {FetchData ? "Logging in..." : "Log In"}
             </button>
-            <p className="register-link">
-              Don’t have an account?{" "} <Link to="/register">Create Account</Link>
-            </p>
 
+            <p className="register-link">
+              Don’t have an account? <Link to="/register">Register</Link>
+            </p>
           </form>
         </div>
-        <ToastContainer />
+        {/* <ToastContainer /> */}
       </section>
     </>
   );
