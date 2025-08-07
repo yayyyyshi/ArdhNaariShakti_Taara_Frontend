@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 
 export const Card = ({ posts }) => {
-  const PublicFlo = "http://localhost:5000/images/"
+  const PublicFlo = "https://taara-backend.onrender.com/images/"
   return (
     <section className='blog'>
       <div className='container grid3'>
