@@ -43,7 +43,7 @@ export const Footer = () => {
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
               <li><a href="/jobs">Jobs</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="/blogs">Blog</a></li>
               <li><a href="/shelter">Shelter</a></li>
             </ul>
           </div>
