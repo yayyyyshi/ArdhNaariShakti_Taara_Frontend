@@ -14,9 +14,8 @@ import { Jobs } from "./pages/jobs/jobs.jsx"
 import { Blogpage } from "./pages/blogpage/blogpage.jsx"
 import { Shelter } from "./pages/shelter/shelter.jsx"
 import { Gallery } from "./pages/gallery/Gallery.jsx"
-
+import { Terms } from "./pages/terms/Terms.jsx"
 import { Help } from "./pages/help/Help.jsx"
-
 import { About } from "./pages/about/About.jsx"
 
 const App = () => {
@@ -38,7 +37,7 @@ const App = () => {
           <Route path="/account" element={<Account/>} />
           <Route path="/create" element={<Create/>} />
           <Route path="/gallery" element={<Gallery />} />
-
+          <Route path="/terms" element={<Terms />} />
           <Route path="/help" element={<Help />} />
 
           <Route path="/about" element={<About />} />
