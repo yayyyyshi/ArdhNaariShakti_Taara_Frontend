@@ -6,8 +6,6 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  /* Removed static bg to allow dynamic bg on Shelter page */
-  /* background-color: #f9f9f9;  */
   color: #000;
 }
 h1,
