@@ -4,30 +4,25 @@
 
 **Ardh Naari Shakti Tara** is a community-focused web platform, built to support and uplift transgenders and marginalized individuals by offering centralized access to vital services and information. This platform aims to bridge the gap between people and the resources they need to live with dignity and equality.
 
-## Project Overview
+## About
 This website brings together essential services and information under one roof. It is designed to be simple, accessible and impactful, helping individuals navigate their lives with support from verified and trusted resources.
 
 ## Key Features
 
 1. **Blog**
-
-A section dedicated to sharing news, awareness articles, and inspiring stories from the community. It promotes understanding and visibility for underrepresented voices.
+	A section dedicated to sharing news, awareness articles, and inspiring stories from the community. It promotes understanding and visibility for underrepresented voices.
 
 2. **Shelter Directory**
-
-An organized list of shelters with names and addresses to support people seeking safe and inclusive accommodations.
+	An organized list of shelters with names and addresses to support people seeking safe and inclusive accommodations.
 
 3. **Tarabot - AI Support System**
-
-**Tarabot** is an integrated AI-based support assistant designed to guide users through the platform, answer questions, and help them find relevant services. Whether it's locating a nearby shelter, exploring job opportunities, or learning about legal rights, Tarabot provides instant, helpful responses to enhance user experience.
+	**Tarabot** is an integrated AI-based support assistant designed to guide users through the platform, answer questions, and help them find relevant services. Whether it's locating a nearby shelter, exploring job opportunities, or learning about legal rights, Tarabot provides instant, helpful responses to enhance user experience.
 
 4. **Job Listings**
+	A curated list of employment opportunities to help users gain financial independence and sustainable livelihoods.
 
-A curated list of employment opportunities to help users gain financial independence and sustainable livelihoods.
-
-5. **Our Mission**
-
-Our mission is to create a world where everyone — regardless of their gender identity — can thrive with access to healthcare, education, legal assistance, shelter, and job opportunities.
+5. **Our Mission**🏳️‍⚧️
+	Our mission is to create a world where everyone — regardless of their gender identity — can thrive with access to healthcare, education, legal assistance, shelter, and job opportunities.
 
 
 ## Technologies Used
