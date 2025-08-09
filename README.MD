@@ -1,6 +1,6 @@
 # Ardh Naari Shakti Tara
 
-                                                                        🌈 Live Website: https://ardhnaarishaktitaara.netlify.app 🌈
+🌈 **Live Website**: https://ardhnaarishaktitaara.netlify.app 🌈
 
 **Ardh Naari Shakti Tara** is a community-focused web platform, built to support and uplift transgenders and marginalized individuals by offering centralized access to vital services and information. This platform aims to bridge the gap between people and the resources they need to live with dignity and equality.
 
