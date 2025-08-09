@@ -25,7 +25,7 @@ A curated list of employment opportunities to help users gain financial independ
 Our mission is to create a world where everyone — regardless of their gender identity — can thrive with access to healthcare, education, legal assistance, shelter, and job opportunities.
 
 
-### Technologies Used:
+## Technologies Used:
 1 HTML5
 2 CSS3
 3 JavaScript (ES6)
@@ -40,18 +40,18 @@ Our mission is to create a world where everyone — regardless of their gender i
 git clone https://github.com/Agarwalvidu/ArdhNaariShakti_Taara_Frontend.git
 cd repo-name
 ```
-Install dependencies:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+3. Start the development server:
 ```bash
 npm start
 ```
 The app will run at http://localhost:3000
 
-3. Build for production:
+4. Build for production:
 ```bash
 npm run build
 ```
@@ -61,7 +61,9 @@ npm run build
 2. Connect it to Netlify
 3. Set build command to: npm run build
 4. Set publish directory to: build
+
 Deploy!
+
 ⭐️ Live Site: https://ardhnaarishaktitaara.netlify.app
 
 ## ✨ Future Ideas
@@ -78,6 +80,7 @@ We welcome contributions from anyone passionate about inclusion and equality.
 - Clone it. 
 - Create a new branch and name it related to the issue you've worked on.
 - Submit a pull request.
+
 For major feature changes, open an issue first to discuss ideas.
 
 ✅ License:
