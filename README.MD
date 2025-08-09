@@ -11,7 +11,7 @@ This website brings together essential services and information under one roof. 
 
 1. **Blog**
 	
-	A section dedicated to sharing news, awareness articles, and inspiring stories from the community. It promotes understanding and visibility for underrepresented voices.
+	A section dedicated to sharing news, awareness articles, and inspiring stories from the community. It promotes understanding and visibility for under-represented voices.
 
 2. **Shelter Directory**
 	
@@ -19,7 +19,7 @@ This website brings together essential services and information under one roof. 
 
 3. **Tarabot - AI Support System**
 	
-	**Tarabot** is an integrated AI-based support assistant designed to guide users through the platform, answer questions, and help them find relevant services. Whether it's locating a nearby shelter, exploring job opportunities, or learning about legal rights, Tarabot provides instant, helpful responses to enhance user experience.
+	**Tarabot** is an integrated AI-based support assistant designed to guide users through the platform, answer questions, and help them find relevant services. Whether it's locating a nearby shelter, exploring job opportunities, or learning about legal rights- Tarabot provides instant, helpful responses to enhance user experience.
 
 4. **Job Listings**
 	
