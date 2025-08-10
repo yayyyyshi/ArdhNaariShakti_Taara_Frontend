@@ -14,7 +14,7 @@ import { Jobs } from "./pages/jobs/jobs.jsx"
 import { Blogpage } from "./pages/blogpage/blogpage.jsx"
 import { Shelter } from "./pages/shelter/shelter.jsx"
 import { Gallery } from "./pages/gallery/Gallery.jsx"
-
+import NotFound from "./pages/notfound/page.jsx"
 import { Contact } from "./pages/contact/Contact.jsx"
 
 import { Privacy } from "./pages/privacy/Privacy.jsx"
@@ -49,7 +49,7 @@ const App = () => {
           <Route path="/terms" element={<Terms />} />
           <Route path="/help" element={<Help />} />
           <Route path="/about" element={<About />} />
-
+<Route path="*" element={<NotFound/>}/>
 
         </Routes>
         <Footer />
