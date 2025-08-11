@@ -10,7 +10,7 @@ export const Card = ({ posts }) => {
 
   return (
     <>
-      {/* Add New Post Button (centered below navbar) */}
+      {/* Add New Post Button */}
       {user && (
         <div className="add-post-container">
           <Link to="/create" className="add-post-button">
@@ -19,7 +19,24 @@ export const Card = ({ posts }) => {
         </div>
       )}
 
-      {/* Blog Posts */}
+      {/* Static Blogs */}
+      <div className="static-blogs-container">
+        {blogs.map(blog => (
+          <div className="static-blog-card" key={blog.id}>
+            <img src={blog.image} alt={blog.title} className="static-blog-image" />
+            <div className="static-blog-content">
+              <h3 className="static-blog-title">{blog.title}</h3>
+              <p className="static-blog-description">{blog.description}</p>
+              <div className="static-blog-footer">
+                <span>{blog.date}</span>
+                <Link to={`/blog/${blog.id}`} className="read-more">Read More →</Link>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Dynamic Blog Posts */}
       <section className="blog">
         <div className="container grid3">
           {Array.isArray(posts) &&
@@ -56,8 +73,7 @@ export const Card = ({ posts }) => {
                         : "Date not available"}
                     </label>
                     <AiOutlineComment className="icon" /> <label>27</label>
-                    <AiOutlineShareAlt className="icon" />{" "}
-                    <label>SHARE</label>
+                    <AiOutlineShareAlt className="icon" /> <label>SHARE</label>
                   </div>
                 </div>
               </div>
@@ -67,3 +83,30 @@ export const Card = ({ posts }) => {
     </>
   );
 };
+
+const blogs = [
+  {
+    id: 1,
+    title: "The Power of Community",
+    description: "How small actions lead to big change.",
+    image: "https://via.placeholder.com/400x200",
+    author: "Admin",
+    date: "2025-08-11"
+  },
+  {
+    id: 2,
+    title: "Empowering Women Through Education",
+    description: "Stories from our outreach programs.",
+    image: "https://via.placeholder.com/400x200",
+    author: "Admin",
+    date: "2025-08-10"
+  },
+  {
+    id: 3,
+    title: "Sustainable Living Tips",
+    description: "Easy changes for a greener planet.",
+    image: "https://via.placeholder.com/400x200",
+    author: "Admin",
+    date: "2025-08-09"
+  }
+];

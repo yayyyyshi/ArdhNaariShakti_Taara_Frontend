@@ -15,13 +15,13 @@ import { Blogpage } from "./pages/blogpage/blogpage.jsx"
 import { Shelter } from "./pages/shelter/shelter.jsx"
 import { Gallery } from "./pages/gallery/Gallery.jsx"
 
-import { Contact } from "./pages/contact/Contact.jsx"
+import { Contact } from "./pages/contact/contact.jsx"
 
 import { Privacy } from "./pages/privacy/Privacy.jsx"
 import { Terms } from "./pages/terms/Terms.jsx"
 import { Help } from "./pages/help/Help.jsx"
 import { About } from "./pages/about/About.jsx"
-
+import MobileNavbar from './components/MobileNavbar/MobileNavbar';
 
 const App = () => {
   //after login
@@ -29,6 +29,9 @@ const App = () => {
   return (
     <>
       <Router>
+       <div className="mobile-only">
+        <MobileNavbar />
+        </div>
         <Header />
         <GoogleTagManager/>
         <Routes>

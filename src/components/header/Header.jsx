@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import MobileNavbar from "../MobileNavbar/MobileNavbar"
 import logo from "../../assets/images/logo.png"
 import "./header.css"
 import { User } from "./User"
