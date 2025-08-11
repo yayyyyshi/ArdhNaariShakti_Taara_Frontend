@@ -38,7 +38,7 @@ export const Category = () => {
     slidesToShow: 3,
     slidesToScroll: 2,
      autoplay: true,          //  Enable autoplay
-  autoplaySpeed: 1500,     //  Time between slides (ms)
+  autoplaySpeed: 2100,     //  Time between slides (ms)
   pauseOnHover: true,
 
     nextArrow: <SampleNextArrow />,
