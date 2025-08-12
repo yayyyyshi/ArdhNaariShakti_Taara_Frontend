@@ -24,6 +24,11 @@ export const nav = [
       text: "Job",
       url: "/jobs",
     },
+    {
+      id: 6,
+      text: "Calming Corner",
+      url: "/music",
+    },
   ]
   export const category = [
     {
