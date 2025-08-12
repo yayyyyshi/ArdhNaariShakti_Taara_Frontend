@@ -41,6 +41,3 @@ coverage/
 
 *.log
 
-/build
-*.map
-build/static/
