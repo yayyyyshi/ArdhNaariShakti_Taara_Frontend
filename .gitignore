@@ -43,3 +43,4 @@ coverage/
 
 /build
 *.map
+build/static/
