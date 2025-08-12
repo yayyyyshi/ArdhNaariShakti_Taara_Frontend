@@ -10,7 +10,7 @@ export const Card = ({ posts }) => {
 
   return (
     <>
-      {/* Add New Post Button */}
+      {/* Add New Post Button (centered below navbar) */}
       {user && (
         <div className="add-post-container">
           <Link to="/create" className="add-post-button">
@@ -19,7 +19,7 @@ export const Card = ({ posts }) => {
         </div>
       )}
 
-      {/* Static Blogs */}
+      {/* Blog Posts */}
       <div className="static-blogs-container">
         {blogs.map(blog => (
           <div className="static-blog-card" key={blog.id}>
@@ -73,7 +73,8 @@ export const Card = ({ posts }) => {
                         : "Date not available"}
                     </label>
                     <AiOutlineComment className="icon" /> <label>27</label>
-                    <AiOutlineShareAlt className="icon" /> <label>SHARE</label>
+                    <AiOutlineShareAlt className="icon" />{" "}
+                    <label>SHARE</label>
                   </div>
                 </div>
               </div>
