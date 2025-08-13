@@ -26,9 +26,14 @@ export const nav = [
     },
     {
       id: 6,
-      text: "Calming Corner",
-      url: "/music",
+      text: "Gallery",
+      url: "/gallery",
     },
+    {id:7,
+      text:"Calming Corner",
+      url:"/music",
+    },
+
   ]
   export const category = [
     {
