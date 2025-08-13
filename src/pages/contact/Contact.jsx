@@ -2,6 +2,7 @@ import React from "react";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import "../contact/contact.css"; // Optional: if you want to style separately
 
+
 export const Contact = () => {
   return (
     <div className="contact-page">
