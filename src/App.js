@@ -21,6 +21,8 @@ import { Privacy } from "./pages/privacy/Privacy.jsx"
 import { Terms } from "./pages/terms/Terms.jsx"
 import { Help } from "./pages/help/Help.jsx"
 import { About } from "./pages/about/About.jsx"
+
+
 import CalmingCorner from "./pages/music/CalmingCorner.jsx"
 const App = () => {
   //after login
@@ -40,11 +42,15 @@ const App = () => {
           <Route path="/shelter" element={<Shelter/>} />
           <Route path="/account" element={<Account/>} />
           <Route path="/create" element={<Create/>} />
-           <Route path="/gallery" element={<Gallery />} />
-           <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
+
+          <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/about" element={<About />} />
+
+
            <Route path="/music" element={<CalmingCorner/>} />
         </Routes>
         <Footer />
