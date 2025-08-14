@@ -22,6 +22,8 @@ import { Terms } from "./pages/terms/Terms.jsx"
 import { Help } from "./pages/help/Help.jsx"
 import { About } from "./pages/about/About.jsx"
 
+import { GoToTopButton } from "./components/goToTopButton/goToTopButton.jsx"
+
 
 const App = () => {
   //after login
@@ -53,6 +55,7 @@ const App = () => {
 
         </Routes>
         <Footer />
+        <GoToTopButton/>
       </Router>
     </>
   )
