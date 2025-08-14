@@ -49,7 +49,7 @@ representative at an online or offline event.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers at [project email/contact method]. All complaints will be reviewed and investigated promptly and fairly, with respect for the privacy and security of the reporter.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers via Discord to our moderators. All complaints will be reviewed and investigated promptly and fairly, with respect for the privacy and security of the reporter.
 
 If you experience or witness behavior that violates this Code of Conduct, please contact us directly or open an issue (for non-sensitive matters). We are committed to protecting the dignity and safety of all users.
 
