@@ -96,53 +96,44 @@ export const AboutWrapper = styled.div`
 `;
 
 
+export const AboutCard = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  width: 220px;
+  height: 280px; /* increased height for uniformity */
+  border: 0.5px solid pink;
+  padding: 20px 15px; /* adjusted padding */
+  box-shadow: 0 1px 3px gray;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
 
-export const AboutCard=styled.div`
-// background: #0D0A03; 
-align-items:center;
-display:flex;
-flex-direction:column;
-justify-content:flex-start;
-border-radius:10px;
-width: 220px;
-height: 230px;
-border:0.5px solid pink;
-z-index: 3;
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
 
-padding:21px;
-/* gap:50px; */
-box-shadow: 0 1px 3px gray;
-transition: all 0.2s ease-in-out;
-background:rgba(255,255,255,0.7);
-&:hover{
-    transform:scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor:pointer;
-
-}
-
-@media screen and (max-width:480px){
-    height:300px;
-    
-}
-
-
-
+  @media screen and (max-width: 480px) {
+    height: 300px;
+  }
 `
-export  const AboutIcon=styled.img`
-height:150px;
-width:170px;
-margin-bottom:0px;
-z-index: 3;
-// border:0.5px solid #FFC640;
-// box-shadow:3px 3px 3px #FFC640;
 
-@media screen and (max-width:480px){
-    height:150px;
-}
+export const AboutIcon = styled.img`
+  height: 150px;
+  width: 150px; /* fixed width to match height */
+  margin-bottom: 10px; /* consistent spacing below icon */
+  object-fit: contain;
+  z-index: 3;
 
-
+  @media screen and (max-width: 480px) {
+    height: 150px;
+    width: 150px;
+  }
 `
+
 export const AboutH1=styled.h1`
 /* font-size:5rem;
 color:black;
@@ -159,33 +150,35 @@ margin-bottom: 64px;
     font-size:1.5rem;
 }
 `
-export const AboutH2=styled.h2`
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-z-index: 3;
-color:purple;
-@media screen and (max-width:480px){
-    font-size:1.3rem;
+
+export const AboutH2 = styled.h2`
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px; /* added margin for spacing consistency */
+  color: purple;
+  z-index: 3;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
     line-height: 30px;
-}
-
+  }
 `
-export const AboutP=styled.p`
-font-family:'Poppins', sans-serif;
-font-weight: bolder;
-font-size: 16px;
-line-height: 20px;
-z-index: 3;
-text-align:center;
-color:darkblue;
-@media screen and (max-width:480px){
-    font-size:0.9rem;
-    ${'' /* line-height: 30px; */}
-}
 
+export const AboutP = styled.p`
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0; /* reset default margin for alignment */
+  text-align: center;
+  color: darkblue;
+  z-index: 3;
 
-`;
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+`
 
 export const Linked = styled(Link)`
   text-decoration: none; 
