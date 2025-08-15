@@ -52,7 +52,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9910899755</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9910899755
+              </td>
               <td>
                 <a href="mailto:mitrcbodelhi@gmail.com" className="email-link">
                   mitrcbodelhi@gmail.com
@@ -94,7 +96,9 @@ export const Shelter = () => {
                 <br />
                 <small>Programme Manager</small>
               </td>
-              <td className="contact-number">9437656639</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9437656639
+              </td>
               <td>
                 <a href="mailto:sakha.odisha@gmail.com" className="email-link">
                   sakha.odisha@gmail.com
@@ -136,7 +140,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">8778569926</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                8778569926
+              </td>
               <td>
                 <a href="mailto:garimagrehtra@gmail.com" className="email-link">
                   garimagrehtra@gmail.com
@@ -177,7 +183,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">8409834552</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                8409834552
+              </td>
               <td>
                 <a href="mailto:dostanasafar@gmail.com" className="email-link">
                   dostanasafar@gmail.com
@@ -219,7 +227,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9167947771</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9167947771
+              </td>
               <td>
                 <a href="mailto:kinnar.asmita@gmail.com" className="email-link">
                   kinnar.asmita@gmail.com
@@ -261,7 +271,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9340444928</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9340444928
+              </td>
               <td>
                 <a href="mailto:cgmss69@yahoo.com" className="email-link">
                   cgmss69@yahoo.com
@@ -303,7 +315,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">8375819008</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                8375819008
+              </td>
               <td>
                 <a
                   href="mailto:garimamumbai.tweetfoundation@gmail.com"
@@ -348,7 +362,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9820173801</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9820173801
+              </td>
               <td>
                 <a
                   href="mailto:aarjufoundation2010@gmail.com"
@@ -390,7 +406,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9830027185</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9830027185
+              </td>
               <td>
                 <a
                   href="mailto:garimagreh.astana@yahoo.com"
@@ -435,7 +453,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9339219696</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9339219696
+              </td>
               <td>
                 <a
                   href="mailto:ristashelterhome@gmail.com"
@@ -480,7 +500,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9825311997</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9825311997
+              </td>
               <td>
                 <a
                   href="mailto:lakshyagarimagreh@gmail.com"
@@ -522,7 +544,9 @@ export const Shelter = () => {
                 <br />
                 <small>Project Director</small>
               </td>
-              <td className="contact-number">9829291377</td>
+              <td className="contact-number" style={{ textAlign: "center" }}>
+                9829291377
+              </td>
               <td>
                 <a
                   href="mailto:naibhor.sanstha@gmail.com"

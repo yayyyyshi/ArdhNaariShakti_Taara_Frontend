@@ -10,6 +10,7 @@ import blog from "../../assets/images/blog.png"
 import jobs from "../../assets/images/jobs.png" 
 import { AboutContainer, AboutWrapper,  AboutCard, AboutIcon, AboutH2, AboutP } from './InfoElements'
 
+import music from "../../assets/images/music.png"
 export const About = () => {
 
   return (
@@ -44,6 +45,14 @@ export const About = () => {
           <AboutH2>JOBS</AboutH2>
           <AboutP>Be self independent</AboutP>
           </AboutCard>
+          </Link>
+           {/* 🆕 Calming Corner Card */}
+          <Link to='/music'>
+            <AboutCard>
+              <AboutIcon src={music}></AboutIcon>
+              <AboutH2 className='size-h3'>Music</AboutH2>
+              <AboutP>Find your peace</AboutP>
+            </AboutCard>
           </Link>
         </AboutWrapper>
 

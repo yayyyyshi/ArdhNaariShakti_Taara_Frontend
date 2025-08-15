@@ -1,7 +1,8 @@
 # Contributing to ArdhNaariShakti_Taara_Frontend
 
-Thank you for your interest in contributing to **ArdhNaariShakti_Taara_Frontend**! Your involvement helps foster an inclusive, innovative, and impactful project. This guide outlines how you can propose changes, report issues, and help us grow.
-
+Thank you for your interest in contributing to **ArdhNaariShakti_Taara_Frontend**! 
+Your efforts help make this project more inclusive, innovative, and impactful.  
+This guide will help you get started, propose changes, and collaborate effectively.
 ---
 
 ## Table of Contents
@@ -47,7 +48,7 @@ Thank you for your interest in contributing to **ArdhNaariShakti_Taara_Frontend*
 ## Development Guidelines
 
 - **Branching:**  
-  Use descriptive branch names (`feature/login-form`, `fix/navbar-bug`).
+  Use descriptive branch names (`feature/login-form`, `fix/navbar-bug`,`docs/update-readme`)
 
 - **Code Style:**  
   Follow the project's established conventions and formatting. Use clear variable names and add comments where necessary.
@@ -58,7 +59,8 @@ Thank you for your interest in contributing to **ArdhNaariShakti_Taara_Frontend*
     > Example: `Fix button alignment on registration page`
 
 - **Testing:**  
-  Ensure your changes pass existing tests. Add tests for new features or bug fixes if possible.
+  - Ensure existing tests pass before pushing changes.
+  - Add tests for new features or bug fixes if possible.
 
 ---
 
@@ -121,4 +123,4 @@ We are committed to fostering a welcoming and respectful environment. Please rea
 ---
 
 Thank you for contributing to ArdhNaariShakti_Taara_Frontend!  
-Your ideas and effort make a difference.
+Your contributions—big or small—make a difference!
