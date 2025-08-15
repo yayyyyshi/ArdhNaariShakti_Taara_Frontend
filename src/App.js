@@ -25,6 +25,7 @@ import { About } from "./pages/about/About.jsx";
 import { GoToTopButton } from "./components/goToTopButton/goToTopButton.jsx";
 import Feedback from "./pages/feedback/Feedback.jsx";
 
+import CalmingCorner from "./pages/music/CalmingCorner.jsx"
 const App = () => {
   //after login
   const { user } = useContext(Context);
@@ -46,12 +47,16 @@ const App = () => {
           <Route path="/gallery" element={<Gallery />} />
 
           <Route path="/contact" element={<Contact />} />
-
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/help" element={<Help />} />
           <Route path="/about" element={<About />} />
+
+
+           <Route path="/music" element={<CalmingCorner/>} />
+
           <Route path="/feedback" element={<Feedback />} />
+
         </Routes>
         <Footer />
         <GoToTopButton />
