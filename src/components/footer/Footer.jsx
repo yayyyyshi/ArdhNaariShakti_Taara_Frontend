@@ -5,7 +5,7 @@ import { RiInstagramFill } from "react-icons/ri"
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md"
 import logo from "../../assets/images/logo.png"
 import "./footer.css"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function QuickLinks() {
   const navigate = useNavigate();
@@ -23,6 +23,9 @@ function QuickLinks() {
   );
 }
 export const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -63,11 +66,11 @@ export const Footer = () => {
           <div className="footer-section">
             <h4>Resources</h4>
             <ul className="footer-links">
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/terms">Terms of Service</a></li>
-              <li><a href="/help">Help Center</a></li>
+              <li><Link to="/about" onClick={handleScrollToTop}>About Us</Link></li>
+              <li><Link to="/contact" onClick={handleScrollToTop}>Contact</Link></li>
+              <li><Link to="/privacy" onClick={handleScrollToTop}>Privacy Policy</Link></li>
+              <li><Link to="/terms" onClick={handleScrollToTop}>Terms of Service</Link></li>
+              <li><Link to="/help" onClick={handleScrollToTop}>Help Center</Link></li>
             </ul>
           </div>
 
