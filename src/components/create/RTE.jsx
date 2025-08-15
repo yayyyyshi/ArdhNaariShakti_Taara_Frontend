@@ -10,7 +10,7 @@ const RTE = ({ name = "content", control, label }) => {
         control={control}
         render={({ field }) => (
           <Editor
-            apiKey="kmegfrfp0z6f2lhgso5vcr5qluyns0945j8vmyyil347qp7w"
+            apiKey="f72tnml1gyr25gh4femwdlbl1xwoer8q1e54j56zzxwwrhpg"
             init={{
               height: 500,
               menubar: true,
