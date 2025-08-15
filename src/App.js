@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Legal } from "./pages/legal/legal.jsx"
 import { Footer } from "./components/footer/Footer";
 import { GoogleTagManager } from "./components/tagmanager/tagmanager";
 import { Header } from "./components/header/Header";
@@ -22,8 +23,8 @@ import { About } from "./pages/about/About.jsx";
 import NotFound from "./pages/notfound/page.jsx"
 import { GoToTopButton } from "./components/goToTopButton/goToTopButton.jsx";
 import Feedback from "./pages/feedback/Feedback.jsx";
-
 import CalmingCorner from "./pages/music/CalmingCorner.jsx"
+
 const App = () => {
   //after login
   const { user } = useContext(Context);
@@ -32,7 +33,7 @@ const App = () => {
       <Router>
         <Header />
         <GoogleTagManager />
-        <Routes>
+        <Routes>          
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Regsiter />} />
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/shelter" element={<Shelter />} />
           <Route path="/account" element={<Account />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/legal" element={<Legal/>} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
@@ -51,7 +53,6 @@ const App = () => {
           <Route path="*" element={<NotFound/>}/>
           <Route path="/music" element={<CalmingCorner/>} />
           <Route path="/feedback" element={<Feedback />} />
-
         </Routes>
         <Footer />
         <GoToTopButton />
